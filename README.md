@@ -1,6 +1,6 @@
 # LLM Digit Bias
 
-[繁體中文說明](./README.zh-TW.md)
+[繁體中文](./README.zh-TW.md)
 
 This repository contains a public release of a research framework for studying bias in discrete choice tasks for large language models. The current project focuses on a simple but diagnostic setting: a model is asked to choose one digit from `1` to `9` and to return exactly one Arabic numeral.
 
