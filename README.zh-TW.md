@@ -6,6 +6,9 @@
 
 這套框架同時支援行為層與機率層分析。除了重複抽樣與輸出頻率統計之外，本地 `transformers` 路線也支援 tokenizer audit 與 audited-surface candidate probability 分析，因此可以比較模型最終輸出與其候選偏好之間的關係。
 
+![Cross-model comparison at temperature 0.0](results/processed/cross_model_figures/cross_model_js_temp_0p0.png)
+圖：temperature = 0.0 時，各模型在數字層級與位置層級集中程度的比較。
+
 ## 專案範圍
 
 - 支援多種 prompt、排列方式與 temperature 的重複抽樣
