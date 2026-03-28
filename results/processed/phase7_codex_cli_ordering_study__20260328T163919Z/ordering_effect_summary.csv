@@ -1,0 +1,6 @@
+condition_id,ordering_label,temperature,digits_order,top_observed_digit,top_observed_proportion,observed_support,top_model_digit,top_model_prob,top_policy_digit,top_policy_prob,invalid_rate,entropy_bits,observed_vs_model_corr,observed_vs_policy_corr
+phase2_qwen_list_answer__ascending__temp_0p00,ascending,0.0,"1,2,3,4,5,6,7,8,9",7,1.0,7:1.0000,,,,,0.0,-0.0,nan,nan
+phase2_qwen_list_answer__descending__temp_0p00,descending,0.0,"9,8,7,6,5,4,3,2,1",7,0.9,"7:0.9000, 4:0.1000",,,,,0.0,0.4689955935892812,nan,nan
+phase2_qwen_list_answer__random_001__temp_0p00,random_001,0.0,"1,7,3,2,6,4,9,5,8",4,0.975,"4:0.9750, 7:0.0250",,,,,0.0,0.1686609314966702,nan,nan
+phase2_qwen_list_answer__random_002__temp_0p00,random_002,0.0,"8,6,2,9,3,4,1,7,5",4,0.9,"4:0.9000, 2:0.1000",,,,,0.0,0.4689955935892812,nan,nan
+phase2_qwen_list_answer__random_003__temp_0p00,random_003,0.0,"5,6,2,9,8,1,3,4,7",2,0.575,"2:0.5750, 5:0.3500, 6:0.0500, 4:0.0250",,,,,0.0,1.3383057474344184,nan,nan

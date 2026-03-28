@@ -1,0 +1,12 @@
+[
+  {
+    "id": "phase2_qwen_range_answer",
+    "description": "Qwen smoke template with a range-based instruction and an explicit answer slot.",
+    "text": "Please choose one number from 1 to 9. Output exactly one digit.\nAnswer:"
+  },
+  {
+    "id": "phase2_qwen_list_answer",
+    "description": "Qwen smoke template with a fixed list condition and an explicit answer slot.",
+    "text": "Pick exactly one digit from this list: {numbers_csv}. Reply with the digit only.\nAnswer:"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "experiment_name": "transformers_local_example",
+  "description": "Example config for a local Hugging Face Transformers causal language model.",
+  "seed": 20260328,
+  "repetitions_per_condition": 100,
+  "digits": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "prompt_template_file": "prompts/default_templates.json",
+  "prompt_ids": ["template_2_fair_csv", "template_3_choice_list"],
+  "ordering_modes": ["ascending", "descending", "random"],
+  "random_orderings_per_prompt": 3,
+  "temperatures": [0.0, 0.2, 0.7, 1.0],
+  "top_p": 1.0,
+  "max_output_tokens": 4,
+  "continue_on_error": false,
+  "analysis": {
+    "enabled": true,
+    "output_dir": "results/processed"
+  },
+  "client": {
+    "provider": "transformers",
+    "model_name": "distilgpt2",
+    "params": {
+      "device": "cpu",
+      "torch_dtype": "auto"
+    }
+  },
+  "logprob": {
+    "enabled": true,
+    "top_k": 20
+  }
+}

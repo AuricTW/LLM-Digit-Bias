@@ -1,0 +1,12 @@
+[
+  {
+    "id": "phase2_range_answer",
+    "description": "Phase 2 smoke template with a range-based instruction and an explicit answer slot.",
+    "text": "Please choose one number from 1 to 9. Output exactly one digit.\nAnswer:"
+  },
+  {
+    "id": "phase2_fair_csv_answer",
+    "description": "Phase 2 smoke template with a comma-separated list and an explicit answer slot.",
+    "text": "Please choose one number fairly from {numbers_csv}. Output exactly one digit.\nAnswer:"
+  }
+]

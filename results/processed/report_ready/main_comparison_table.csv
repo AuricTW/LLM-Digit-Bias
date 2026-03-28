@@ -1,0 +1,9 @@
+family,scale,model,model_short,mechanism_overall,mechanism_temp0,mechanism_temp02,top_digit_temp0,top_digit_temp02,top_position_temp0,top_position_temp02,ordering_diversity_temp0,ordering_diversity_temp02,max_invalid_rate,interpretation_note
+Gemma,1B,google/gemma-3-1b-it,gemma-3-1b-it,position-leaning,position-leaning,position-leaning,3:0.400,3:0.400,1:0.800,1:0.797,4,4,0.0,position concentration exceeds digit concentration
+Llama,1B,meta-llama/Llama-3.2-1B-Instruct,Llama-3.2-1B-Instruct,digit-leaning,digit-leaning,digit-leaning,8:0.600,7:0.480,1:0.200,5:0.295,2,2,0.0,digit identity dominates position
+Llama,3B,meta-llama/Llama-3.2-3B-Instruct,Llama-3.2-3B-Instruct,digit-leaning,digit-leaning,digit-leaning,9:0.600,9:0.528,1:0.200,6:0.190,3,3,0.0,digit identity dominates position
+Qwen2.5,0.5B,Qwen/Qwen2.5-0.5B-Instruct,Qwen2.5-0.5B-Instruct,digit-leaning,digit-leaning,digit-leaning,1:0.600,1:0.590,7:0.400,9:0.367,2,2,0.0,digit identity dominates position
+Qwen2.5,1.5B,Qwen/Qwen2.5-1.5B-Instruct,Qwen2.5-1.5B-Instruct,digit-leaning,digit-leaning,digit-leaning,1:0.800,1:0.792,9:0.400,9:0.400,2,2,0.0,digit identity dominates position
+Qwen3,4B,Qwen/Qwen3-4B-Instruct-2507,Qwen3-4B-Instruct-2507,mixed,mixed,mixed,5:0.600,5:0.597,1:0.400,1:0.403,3,3,0.0,digit and position concentration are comparable
+SmolLM,135M,HuggingFaceTB/SmolLM2-135M-Instruct,SmolLM2-135M-Instruct,digit-leaning,digit-leaning,digit-leaning,1:0.800,1:0.991,1:0.200,9:0.391,1,1,1.0,"digit-leaning, but strict-format compliance is fragile"
+SmolLM,1.7B,HuggingFaceTB/SmolLM2-1.7B-Instruct,SmolLM2-1.7B-Instruct,hybrid,mixed,digit-leaning,7:0.400,7:0.455,1:0.400,1:0.302,4,4,0.0,mechanism changes with temperature

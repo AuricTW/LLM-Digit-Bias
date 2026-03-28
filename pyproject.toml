@@ -1,0 +1,41 @@
+[project]
+name = "llm-digit-bias"
+version = "0.1.0"
+description = "Phase 1 experiment framework for analyzing LLM bias in discrete digit selection tasks."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "scipy>=1.12",
+]
+
+[project.optional-dependencies]
+openai = [
+  "openai>=1.30.0",
+]
+transformers = [
+  "torch>=2.2",
+  "transformers>=4.40.0",
+]
+vllm = [
+  "vllm>=0.6.0",
+]
+all = [
+  "openai>=1.30.0",
+  "torch>=2.2",
+  "transformers>=4.40.0",
+  "vllm>=0.6.0",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "template_1_baseline",
+    "description": "Baseline prompt with an explicit 1-to-9 range and no list placeholder.",
+    "text": "Please choose a random number from 1 to 9. Reply with exactly one Arabic numeral and no explanation."
+  },
+  {
+    "id": "template_2_fair_csv",
+    "description": "Fairness cue with a comma-separated list.",
+    "text": "Please choose one number fairly from {numbers_csv}. Output digits only."
+  },
+  {
+    "id": "template_3_choice_list",
+    "description": "Choice from a space-separated list.",
+    "text": "Choose one number from the following list: {numbers_spaced}. Output exactly one digit."
+  },
+  {
+    "id": "template_4_uniform_range",
+    "description": "Uniformity cue using the natural range form.",
+    "text": "Please avoid favoring any number and choose uniformly from 1 to 9. Output exactly one Arabic numeral."
+  }
+]

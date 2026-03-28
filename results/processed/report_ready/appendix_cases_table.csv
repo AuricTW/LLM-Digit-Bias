@@ -1,0 +1,3 @@
+case_id,route,model,status,included_in_main_table,strict_valid_rate_best,recovered_valid_rate_best,support_or_pattern,note
+qwen3_1p7b_protocol,transformers,Qwen/Qwen3-1.7B,protocol-mismatch,no,0.0,1.0,5:1.0000,"semantically answers the task, but outputs think-wrapper text under the strict parser"
+codex_cli_gpt54,codex_cli,gpt-5.4,auxiliary-output-only,no,1.0,nan,"4:0.4000, 7:0.3850, 2:0.1350, 5:0.0700, 6:0.0100","strong output-only non-uniformity, but no logprobs, tokenizer audit, or explicit decode controls"

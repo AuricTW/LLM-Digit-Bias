@@ -1,0 +1,35 @@
+{
+  "experiment_name": "phase2_qwen_0p5b_real_smoke",
+  "description": "Phase 2 real-model smoke test on Qwen2.5-0.5B-Instruct with tokenizer audit and candidate probability analysis.",
+  "seed": 20260328,
+  "repetitions_per_condition": 100,
+  "digits": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "prompt_template_file": "prompts/phase2_qwen_smoke_templates.json",
+  "prompt_ids": ["phase2_qwen_range_answer", "phase2_qwen_list_answer"],
+  "ordering_modes": ["random"],
+  "random_orderings_per_prompt": 1,
+  "temperatures": [0.0, 0.2],
+  "top_p": 1.0,
+  "max_output_tokens": 2,
+  "continue_on_error": false,
+  "analysis": {
+    "enabled": true,
+    "output_dir": "results/processed"
+  },
+  "client": {
+    "provider": "transformers",
+    "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "params": {
+      "device": "cuda",
+      "torch_dtype": "float16",
+      "apply_chat_template": true,
+      "chat_role": "user",
+      "candidate_surface_prefixes": ["", " ", "\n"],
+      "neutralize_generation_defaults": true
+    }
+  },
+  "logprob": {
+    "enabled": true,
+    "top_k": 20
+  }
+}

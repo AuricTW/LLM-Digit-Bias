@@ -1,0 +1,5 @@
+run_id,condition_id,prompt_variant_id,temperature,max_output_tokens,n_total,strict_valid_rate,empty_think_wrapper_rate,recovered_valid_rate,recovered_only_rate,recovered_digit_support,top_raw_outputs,mean_latency_ms
+phase6_qwen3_1p7b_protocol_compatibility__20260328T161603Z,default_prompt__max_4__temp_0p00,default_prompt,0.0,4,20,0.0,0.0,0.0,0.0,,"<think>\nOkay,:20",997.9857
+phase6_qwen3_1p7b_protocol_compatibility__20260328T161603Z,default_prompt__max_20__temp_0p00,default_prompt,0.0,20,20,0.0,0.0,0.0,0.0,,"<think>\nOkay, let's see. I need to pick exactly one digit from the list::20",6922.572899999999
+phase6_qwen3_1p7b_protocol_compatibility__20260328T161603Z,no_think_prefix__max_4__temp_0p00,no_think_prefix,0.0,4,20,0.0,1.0,0.0,0.0,,<think>\n\n</think>:20,1567.6973999999998
+phase6_qwen3_1p7b_protocol_compatibility__20260328T161603Z,no_think_prefix__max_20__temp_0p00,no_think_prefix,0.0,20,20,0.0,1.0,1.0,1.0,5:1.0000,<think>\n\n</think>\n\n5:20,2257.4146499999997
