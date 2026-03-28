@@ -6,6 +6,10 @@ This repository contains a public release of a research framework for studying b
 
 The framework is designed to support both behavioral analysis and probability-layer analysis. In addition to repeated sampling and output-frequency statistics, the local `transformers` path supports tokenizer audits and audited-surface candidate probability analysis, making it possible to compare final outputs with model-side preferences.
 
+![Cross-model comparison at temperature 0.0](results/processed/cross_model_figures/cross_model_js_temp_0p0.png)
+Figure: Cross-model comparison of digit-level and position-level concentration at temperature 0.0.
+
+
 ## Scope
 
 - repeated sampling across prompt templates, orderings, and temperatures
