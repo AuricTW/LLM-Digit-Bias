@@ -2,7 +2,7 @@
 
 [繁體中文](./README.zh-TW.md)
 
-This repository contains a public release of a research framework for studying bias in discrete choice tasks for large language models. The current project focuses on a simple but diagnostic setting: a model is asked to choose one digit from `1` to `9` and to return exactly one Arabic numeral.
+This repository contains a public release of a research framework for studying bias in discrete choice tasks for large language models. The current project focuses on a simple but diagnostic setting: a model is asked to choose one digit from `1` to `9` and to return exactly one Arabic numeral. 
 
 The framework is designed to support both behavioral analysis and probability-layer analysis. In addition to repeated sampling and output-frequency statistics, the local `transformers` path supports tokenizer audits and audited-surface candidate probability analysis, making it possible to compare final outputs with model-side preferences.
 
